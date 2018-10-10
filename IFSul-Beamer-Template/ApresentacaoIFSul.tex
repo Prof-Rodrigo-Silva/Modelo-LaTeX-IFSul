@@ -1,0 +1,106 @@
+\documentclass{beamer}
+
+\usefonttheme{structurebold}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel} 
+
+
+
+\title{Título do trabalho}
+\date{\today}
+\author{Fulano Ciclano Beltrano \\ Tecnologia em Análise e Desenvolvimento de Sistemas}
+\institute{IFSul - Campus Bagé}
+
+\usetheme{ifsul}
+
+\begin{document}
+	
+	\begin{frame}[noframenumbering]
+		\titlepage
+		\thispagestyle{empty}
+	\end{frame}
+		\begin{frame}{Sumário}
+		\setbeamertemplate{section in toc}[sections numbered]
+		\tableofcontents[hideallsubsections]
+	\end{frame}
+
+\section{Introdução}
+\begin{frame}{Introdução}
+	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+	\begin{itemize}
+		\item Blá
+		\item Blá
+		\item Blá
+	\end{itemize}
+\end{frame}
+
+\section{Blocos}
+\begin{frame}{Blocos}
+	\begin{block}{Bloco Padrão}
+		\begin{itemize}
+			\item Item
+			\item Item
+		\end{itemize}
+	\end{block}	
+	\begin{exampleblock}{Bloco de Exemplo}
+		\begin{itemize}
+			\item Item
+			\item Item
+		\end{itemize}
+	\end{exampleblock}	
+	\begin{alertblock}{Bloco de Alerta}
+		\begin{itemize}
+			\item Item
+			\item Item
+		\end{itemize}
+	\end{alertblock}
+\end{frame}
+
+\section{Figura}
+\begin{frame}{Figura}
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[scale=.1]{ifsul.png}
+	\end{figure}
+\end{frame}
+
+\section{Colunas}
+\begin{frame}{Colunas}
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+		some text here some text here some text here some text here some text here
+		some text here some text here some text here some text here some text here
+		some text here some text here some text here some text here some text here
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{ifsul.png}
+		\end{center}
+	\end{column}
+	\begin{column}{0.5\textwidth}  %%<--- here
+		some text here some text here some text here some text here some text here
+		some text here some text here some text here some text here some text here
+		some text here some text here some text here some text here some text here
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{ifsul.png}
+		\end{center}
+	\end{column}
+\end{columns}
+\end{frame}
+
+\section{Lista Numeradas}
+\begin{frame}{Listas Numeradas}
+\begin{enumerate}
+\item some text here
+\item some text here
+\end{enumerate}
+\end{frame}
+
+\section{Finalização}
+\begin{frame}{Encerramento}
+\begin{center}
+{\huge MUITO OBRIGADO!\\\vspace*{0.5cm}DÚVIDAS?}\\\vspace*{2.5cm}
+{\large Fulano Beltrano Ciclano\\\vspace*{0.3cm}seuemail@ifsul.edu.br}
+\end{center}
+\end{frame}
+\end{document}
